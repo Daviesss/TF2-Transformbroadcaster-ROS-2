@@ -45,7 +45,17 @@ NOTE : Make sure you build the package after cloning into your workspace
   ros2 run tf2_ros_node tf2_publisher
 ```
 
-![Screenshot from 2023-12-10 09-54-44](https://github.com/Daviesss/TF2-Transformbroadcaster-ROS-2/assets/97457075/e02a2464-fab0-4f04-b865-2e1eec8bb4e0)
+Now open rviz2 while the command node is running 
+
+```
+  rviz2
+```
+
+Set the fixed frame to map and add the tf tag using the add tag and the tf name on rviz2, below the left hand side of rviz2 . You will see a transform link from "map" which is the fixed_frame to "child_frame_name" which is the child frame . You can name the child_frame to what you want . Normally it is always a sensor frame name which is attached to the fixed_frame the origin of the robot. In this scenario , we named it "child_frame_name" which is the child_frame name , map is the fixed frame. So its a transform going from map->child_frame_name.
+
+# NODE EXPLANATION 
+
+
 
 
 
