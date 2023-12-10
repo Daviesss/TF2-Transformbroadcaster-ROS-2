@@ -83,7 +83,7 @@ Now open rviz2 while the command node is running
 - self.timeer = self.create_timer(self.timer, self.control_callback): Create a timer with the specified interval (self.timer) and associate it with the callback function self.control_callback.
 
   ```
-   # control method
+  # control method
   def control_callback(self):
         self.Transform_broadcast.header.stamp = self.get_clock().now().to_msg()
         self.Transform_broadcast.header.frame_id = 'map' # origin frame/fixed_frame name 'map'
