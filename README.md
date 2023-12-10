@@ -24,4 +24,9 @@ The Cartesian plane, which utilizes location coordinates of the form (x, y). A c
 
     # TRANSLATION :
      In 2D coordinate frames transformation, translation involves shifting an object or point from one position to another without changing its orientation. This is achieved by adding a constant displacement to the x and y coordinates of the object. For instance , if you want to translate a point (x , y) */by (dx , dy), the new coordinates would be (x + dx, y + dy). This process moves the entire object or coordinate system in a specified direction.
+
+  # ROS THE ROS 2 NODE :
+
+  clone the package into your created workspace :
+  
      
