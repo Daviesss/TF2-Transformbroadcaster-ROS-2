@@ -17,6 +17,11 @@ The Cartesian plane, which utilizes location coordinates of the form (x, y). A c
 - translation.
 
     # SCALE CHANGE :
-    This refers to the modification of the size of an object or space. This transformation involves adjusting the distances between points in the x and y directions. Scalling can be uniform, where x and y dimensions are scaled equally, or non-uniform, where the scalling factors may differ for each axis.
+     This refers to the modification of the size of an object or space. This transformation involves adjusting the distances between points in the x and y directions. Scalling can be uniform, where x and y dimensions are scaled equally, or non-uniform, where the scalling factors may differ for each axis.
 
     # ROTATION :
+     Rotation in a 2D coordinate frame transformation involves changing the orientation of points or objects around a fixed point, often the origin.
+
+    # TRANSLATION :
+     In 2D coordinate frames transformation, translation involves shifting an object or point from one position to another without changing its orientation. This is achieved by adding a constant displacement to the x and y coordinates of the object. For instance , if you want to translate a point (x , y) */by (dx , dy), the new coordinates would be (x + dx, y + dy). This process moves the entire object or coordinate system in a specified direction.
+     
