@@ -1,4 +1,5 @@
-# Publishing transform frame via a python script , from parent_frame/fixed_frame to a child_frame 
+# Publishing transform frame via a python script , from parent_frame/fixed_frame to a child_frame  
+# import packages needed 
 import rclpy 
 from rclpy.node import Node 
 from geometry_msgs.msg import TransformStamped
