@@ -115,6 +115,8 @@ Now open rviz2 while the command node is running
  - self.broadcaster.sendTransform(self.Transform_broadcast): Send the transformation information using the TransformBroadcaster.
  - The self.get_logger().info('The transforms has been received %r' % self.broadcaster): Indicating that the transforms have been received, along with information about the broadcaster.
 
+ The rest of the node is the main fuction in which the class name is called .
+
 
 
   
