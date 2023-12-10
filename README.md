@@ -60,7 +60,11 @@ Now open rviz2 while the command node is running
     from geometry_msgs.msg import TransformStamped
     from tf2_ros import TransformBroadcaster
   ``` 
-
+- import rclpy: Import the Python client library for ROS 2.
+- from rclpy.node import Node: Import the Node class, which represents a computation unit in ROS 2.
+- from geometry_msgs.msg import TransformStamped: Import a message type for handling transformations between coordinate frames.
+- from tf2_ros import TransformBroadcaster: Import a class for broadcasting transformation information to the ROS system.
+  
 
 
 
