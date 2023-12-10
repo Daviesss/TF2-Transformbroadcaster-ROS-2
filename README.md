@@ -51,9 +51,16 @@ Now open rviz2 while the command node is running
   rviz2
 ```
 
-Set the fixed frame to map and add the tf tag using the add tag and the tf name on rviz2, below the left hand side of rviz2 . You will see a transform link from "map" which is the fixed_frame to "child_frame_name" which is the child frame . You can name the child_frame to what you want . Normally it is always a sensor frame name which is attached to the fixed_frame the origin of the robot. In this scenario , we named it "child_frame_name" which is the child_frame name , map is the fixed frame. So its a transform going from map->child_frame_name.
+ Set the fixed frame to map and add the tf tag using the add tag and the tf name on rviz2, below the left hand side of rviz2 . You will see a transform link from "map" which is the fixed_frame to "child_frame_name" which is the child frame . You can name the child_frame to what you want . Normally it is always a sensor frame name which is attached to the fixed_frame the origin of the robot. In this scenario , we named it "child_frame_name" which is the child_frame name , map is the fixed frame. So its a transform going from map->child_frame_name.
 
 # NODE EXPLANATION 
+  ```
+    import rclpy 
+    from rclpy.node import Node 
+    from geometry_msgs.msg import TransformStamped
+    from tf2_ros import TransformBroadcaster
+  ``` 
+
 
 
 
