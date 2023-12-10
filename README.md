@@ -38,5 +38,12 @@ NOTE : Make sure you build the package after cloning into your workspace
 ```
   colcon build
 ```
+
+# RUNNING THE NODE AND EXPLANAITION WHAT EVERY LINE OF THE NODE DOES 
+
+```
+  ros2 run tf2_ros_node tf2_publisher
+```
+
   
      
