@@ -30,8 +30,13 @@ The Cartesian plane, which utilizes location coordinates of the form (x, y). A c
   clone the package into your created workspace :
      
 ```
-  https://github.com/Daviesss/TF2-Transformbroadcaster-ROS-2.git
+   https://github.com/Daviesss/TF2-Transformbroadcaster-ROS-2.git
+```
 
+NOTE : Make sure you build the package after cloning to your workspace 
+
+```
+  colcon build
 ```
   
      
