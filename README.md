@@ -101,7 +101,19 @@ Now open rviz2 while the command node is running
         self.broadcaster.sendTransform(self.Transform_broadcast)
         self.get_logger().info('The transforms has been received %r' % self.broadcaster)
   ```
-
+ - def control_callback(self):: Define a method named control_callback. This method will be called when the timer triggers.
+ - self.Transform_broadcast.header.stamp = self.get_clock().now().to_msg(): Set the timestamp of the transformation message to the current time obtained from the ROS clock.
+ - self.Transform_broadcast.header.frame_id = 'map': Set the frame ID of the transformation to 'map', representing the origin/fixed frame.
+ - self.Transform_broadcast.child_frame_id = 'child_frame_name': Set the child frame ID to 'child_frame_name', representing the frame attached to the origin frame/world frame.
+ - Set the x-coordinate of the translation to 1.5.
+ - Set the y-coordinate of the translation to -0.5.
+ - Set the z-coordinate of the translation to 0.92.
+ - Set the x-component of the rotation quaternion to 0.0.
+ - Set the y-component of the rotation quaternion to 0.0.
+ - Set the z-component of the rotation quaternion to 0.0.
+ - Set the w-component of the rotation quaternion to 1.0.
+ - self.broadcaster.sendTransform(self.Transform_broadcast): Send the transformation information using the TransformBroadcaster.
+ - The self.get_logger().info('The transforms has been received %r' % self.broadcaster): Indicating that the transforms have been received, along with information about the broadcaster.
 
 
 
