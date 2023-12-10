@@ -82,6 +82,25 @@ Now open rviz2 while the command node is running
 - self.timer = 0.05: Set a variable timer to the value 0.05. This likely represents a time interval (in seconds) for a timer.
 - self.timeer = self.create_timer(self.timer, self.control_callback): Create a timer with the specified interval (self.timer) and associate it with the callback function self.control_callback.
 
+  ```
+   # control method
+  def control_callback(self):
+        self.Transform_broadcast.header.stamp = self.get_clock().now().to_msg()
+        self.Transform_broadcast.header.frame_id = 'map' # origin frame/fixed_frame name 'map'
+        self.Transform_broadcast.child_frame_id = 'child_frame_name' # child_frame/frame which is attaced to the origin frame/world_frame
+        self.Transform_broadcast.transform.translation.x = 1.5
+        self.Transform_broadcast.transform.translation.y = -0.5
+        self.Transform_broadcast.transform.translation.z = 0.92
+        
+        # rotation of the frame 
+        self.Transform_broadcast.transform.rotation.x = 0.0
+        self.Transform_broadcast.transform.rotation.y = 0.0
+        self.Transform_broadcast.transform.rotation.z = 0.0
+        self.Transform_broadcast.transform.rotation.w = 1.0
+
+        self.broadcaster.sendTransform(self.Transform_broadcast)
+        self.get_logger().info('The transforms has been received %r' % self.broadcaster)
+  ```
 
 
 
