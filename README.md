@@ -74,7 +74,13 @@ Now open rviz2 while the command node is running
         self.timer = 0.05 
         self.timeer = self.create_timer(self.timer,self.control_callback)
   ```
-
+- class Transform_list(Node):: Define a class named Transform_list that inherits from the Node class in ROS 2.
+- def __init__(self):: Define the initialization method for the class.
+- super().__init__("trasnform_listner_node"): Call the initialization method of the parent class (Node) with the argument "transform_listener_node". This initializes the ROS node with the specified name.
+- self.Transform_broadcast = TransformStamped(): Create an instance of the TransformStamped message type for handling transformations and assign it to the attribute Transform_broadcast.
+- self.broadcaster = TransformBroadcaster(self): Create an instance of the TransformBroadcaster class, passing the current object (self) as an argument. This sets up a broadcaster for sending transformation information
+- self.timer = 0.05: Set a variable timer to the value 0.05. This likely represents a time interval (in seconds) for a timer.
+- self.timeer = self.create_timer(self.timer, self.control_callback): Create a timer with the specified interval (self.timer) and associate it with the callback function self.control_callback.
 
 
 
