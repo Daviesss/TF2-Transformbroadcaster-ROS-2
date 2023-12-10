@@ -18,7 +18,7 @@ class Transform_list(Node):
     def control_callback(self):
         self.Transform_broadcast.header.stamp = self.get_clock().now().to_msg()
         self.Transform_broadcast.header.frame_id = 'map' # origin frame/fixed_frame name 'map'
-        self.Transform_broadcast.child_frame_id = 'table1' # child_frame/frame which is attaced to the origin frame/world_frame
+        self.Transform_broadcast.child_frame_id = 'child_frame_name' # child_frame/frame which is attaced to the origin frame/world_frame
         self.Transform_broadcast.transform.translation.x = 1.5
         self.Transform_broadcast.transform.translation.y = -0.5
         self.Transform_broadcast.transform.translation.z = 0.92
