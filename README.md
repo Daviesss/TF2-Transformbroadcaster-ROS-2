@@ -33,7 +33,7 @@ The Cartesian plane, which utilizes location coordinates of the form (x, y). A c
    https://github.com/Daviesss/TF2-Transformbroadcaster-ROS-2.git
 ```
 
-NOTE : Make sure you build the package after cloning to your workspace 
+NOTE : Make sure you build the package after cloning into your workspace 
 
 ```
   colcon build
